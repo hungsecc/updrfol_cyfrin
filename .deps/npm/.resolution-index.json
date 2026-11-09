@@ -1,0 +1,15 @@
+{
+  "contracts/StorageFactory.sol": {
+    "./SimpleStorage.sol": "contracts/SimpleStorage.sol",
+    "__sources__": {
+      "contracts/StorageFactory.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport { SimpleStorage } from \"./SimpleStorage.sol\";\r\n\r\ncontract StorageFactory {\r\n\r\n    SimpleStorage[] public listOfSimpleStorageContracts;\r\n\r\n    function createSimplestorageContract() public {\r\n        SimpleStorage simpleStorageContractVariable = new SimpleStorage();\r\n        listOfSimpleStorageContracts.push(simpleStorageContractVariable);\r\n    }\r\n\r\n    function sfStore(uint _simpleStorageIndex, uint _simpleStorageNumber) public {\r\n        listOfSimpleStorageContracts[_simpleStorageIndex].store(_simpleStorageNumber);\r\n    }\r\n\r\n    function sfGet(uint _simpleStorageIndex) public view returns(uint) {\r\n        return listOfSimpleStorageContracts[_simpleStorageIndex].retrieve();\r\n    }\r\n}",
+        "file": "contracts/StorageFactory.sol"
+      },
+      "contracts/SimpleStorage.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract SimpleStorage {\r\n\r\n    uint256 public myFavoriteNumber;\r\n\r\n    struct Person {\r\n        uint my_favorite_number;\r\n        string name;\r\n    }\r\n\r\n    Person[] public list_of_people;\r\n\r\n    mapping (string => uint) public name_to_favorite_number;\r\n\r\n    function store(uint256 _favoriteNumber) public {\r\n        myFavoriteNumber = _favoriteNumber;\r\n    }\r\n\r\n    function retrieve() public view returns(uint256) {\r\n        return myFavoriteNumber;\r\n    }\r\n\r\n    function add_person(uint _favorite_number, string memory _name) public {\r\n        list_of_people.push(Person(_favorite_number, _name));\r\n        name_to_favorite_number[_name] = _favorite_number;\r\n    }\r\n\r\n    function show_list_people() public view returns (Person[] memory) {\r\n        return list_of_people;\r\n    }\r\n}",
+        "file": "contracts/SimpleStorage.sol"
+      }
+    }
+  }
+}
