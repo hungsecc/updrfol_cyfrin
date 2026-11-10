@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "createSimplestorageContract",
+				"name": "createSimpleStorageContract",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -20,7 +20,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "list_of_simple_storage_contracts",
+				"name": "listOfSimpleStorageContracts",
 				"outputs": [
 					{
 						"internalType": "contract SimpleStorage",
@@ -35,7 +35,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_simple_storage_index",
+						"name": "_simpleStorageIndex",
 						"type": "uint256"
 					}
 				],
@@ -54,12 +54,12 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_simple_storage_index",
+						"name": "_simpleStorageIndex",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_simple_storage_number",
+						"name": "_simpleStorageNumber",
 						"type": "uint256"
 					}
 				],
@@ -97,19 +97,19 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x0e18f2a41250656ff5d19aa45a45c880bf36122d48e88c2d66a5bd8c66866a5e",
+			"keccak256": "0x991706996d053ea43b3733a490b4339eca98f6bff49e6f9ae2d028a356d98e53",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://70acb38bae728f75202a274a64cb5d9ae872427a87fa04b94b041654b1d471dc",
-				"dweb:/ipfs/QmWTYXT7sHE759zWmTkmtWdrr9czbrWmUTweyAfHG8Bk4c"
+				"bzz-raw://4bd0988ee828c537708eadd8d4fe68fa1c2d5640e156ca41ba009fb595a1927e",
+				"dweb:/ipfs/QmYTLQowN21Zeh8EeXM5AKcaPRoRwfZN5oQqZNCtf4P3mJ"
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0xff01cb662a6bcdb90e9a918d65d398edcc432c84198c99f79868e2376f2fe15e",
+			"keccak256": "0x44c3f5510446f7bd2f40dd4b37106e31cd9a21ebc45383eb75a27e6716256c42",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b78525e91e73c23d45ee07d211aa2452d1153bb2f489dd9d680d00255b5732fe",
-				"dweb:/ipfs/QmcEueXpRgiLd1rcTqsw7GKovUorVQd2VNvjsNK8kuvg45"
+				"bzz-raw://892be2bfaf6132dc900f50e93d9902d1e83332e2528ae3f577145e993ae585d9",
+				"dweb:/ipfs/Qmb9J4Rem8V2PMDwQtjJP8o6jAz7adweJ1UE83poadw3xu"
 			]
 		}
 	},

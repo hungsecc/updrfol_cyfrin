@@ -3,31 +3,31 @@ pragma solidity ^0.8.0;
 
 contract SimpleStorage {
 
-    uint256 public myFavoriteNumber;
+    uint256 public favoriteNumber;
 
     struct Person {
-        uint my_favorite_number;
+        uint myFavoriteNumber;
         string name;
     }
 
-    Person[] public list_of_people;
+    Person[] public listOfPeople;
 
-    mapping (string => uint) public name_to_favorite_number;
+    mapping (string => uint) public nameToFavoriteNumber;
 
-    function store(uint256 _favoriteNumber) public {
-        myFavoriteNumber = _favoriteNumber;
+    function store(uint256 _favoriteNumber) public virtual {
+        favoriteNumber = _favoriteNumber;
     }
 
     function retrieve() public view returns(uint256) {
-        return myFavoriteNumber;
+        return favoriteNumber;
     }
 
-    function add_person(uint _favorite_number, string memory _name) public {
-        list_of_people.push(Person(_favorite_number, _name));
-        name_to_favorite_number[_name] = _favorite_number;
+    function addPerson(uint _favoriteNumber, string memory _name) public {
+        listOfPeople.push(Person(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 
-    function show_list_people() public view returns (Person[] memory) {
-        return list_of_people;
+    function showListPeople() public view returns (Person[] memory) {
+        return listOfPeople;
     }
 }

@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_favorite_number",
+						"name": "_favoriteNumber",
 						"type": "uint256"
 					},
 					{
@@ -18,9 +18,22 @@
 						"type": "string"
 					}
 				],
-				"name": "add_person",
+				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "favoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -31,11 +44,11 @@
 						"type": "uint256"
 					}
 				],
-				"name": "list_of_people",
+				"name": "listOfPeople",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "my_favorite_number",
+						"name": "myFavoriteNumber",
 						"type": "uint256"
 					},
 					{
@@ -48,19 +61,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "myFavoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -68,7 +68,7 @@
 						"type": "string"
 					}
 				],
-				"name": "name_to_favorite_number",
+				"name": "nameToFavoriteNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -94,13 +94,13 @@
 			},
 			{
 				"inputs": [],
-				"name": "show_list_people",
+				"name": "showListPeople",
 				"outputs": [
 					{
 						"components": [
 							{
 								"internalType": "uint256",
-								"name": "my_favorite_number",
+								"name": "myFavoriteNumber",
 								"type": "uint256"
 							},
 							{
@@ -159,11 +159,11 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x0e18f2a41250656ff5d19aa45a45c880bf36122d48e88c2d66a5bd8c66866a5e",
+			"keccak256": "0x991706996d053ea43b3733a490b4339eca98f6bff49e6f9ae2d028a356d98e53",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://70acb38bae728f75202a274a64cb5d9ae872427a87fa04b94b041654b1d471dc",
-				"dweb:/ipfs/QmWTYXT7sHE759zWmTkmtWdrr9czbrWmUTweyAfHG8Bk4c"
+				"bzz-raw://4bd0988ee828c537708eadd8d4fe68fa1c2d5640e156ca41ba009fb595a1927e",
+				"dweb:/ipfs/QmYTLQowN21Zeh8EeXM5AKcaPRoRwfZN5oQqZNCtf4P3mJ"
 			]
 		}
 	},
