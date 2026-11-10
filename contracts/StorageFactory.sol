@@ -5,18 +5,18 @@ import { SimpleStorage } from "./SimpleStorage.sol";
 
 contract StorageFactory {
 
-    SimpleStorage[] public listOfSimpleStorageContracts;
+    SimpleStorage[] public list_of_simple_storage_contracts;
 
     function createSimplestorageContract() public {
-        SimpleStorage simpleStorageContractVariable = new SimpleStorage();
-        listOfSimpleStorageContracts.push(simpleStorageContractVariable);
+        SimpleStorage new_simple_storage_contract = new SimpleStorage();
+        list_of_simple_storage_contracts.push(new_simple_storage_contract);
     }
 
-    function sfStore(uint _simpleStorageIndex, uint _simpleStorageNumber) public {
-        listOfSimpleStorageContracts[_simpleStorageIndex].store(_simpleStorageNumber);
+    function sfStore(uint _simple_storage_index, uint _simple_storage_number) public {
+        list_of_simple_storage_contracts[_simple_storage_index].store(_simple_storage_number);
     }
 
-    function sfGet(uint _simpleStorageIndex) public view returns(uint) {
-        return listOfSimpleStorageContracts[_simpleStorageIndex].retrieve();
+    function sfGet(uint _simple_storage_index) public view returns(uint) {
+        return list_of_simple_storage_contracts[_simple_storage_index].retrieve();
     }
 }
