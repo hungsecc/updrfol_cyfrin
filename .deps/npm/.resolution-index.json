@@ -24,5 +24,21 @@
         "file": "contracts/SimpleStorage.sol"
       }
     }
+  },
+  "contracts/SimpleStorage.sol": {
+    "__sources__": {
+      "contracts/SimpleStorage.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract SimpleStorage {\r\n\r\n    uint256 public favoriteNumber;\r\n\r\n    struct Person {\r\n        uint myFavoriteNumber;\r\n        string name;\r\n    }\r\n\r\n    Person[] public listOfPeople;\r\n\r\n    mapping (string => uint) public nameToFavoriteNumber;\r\n\r\n    function store(uint256 _favoriteNumber) public virtual {\r\n        favoriteNumber = _favoriteNumber;\r\n    }\r\n\r\n    function retrieve() public view returns(uint256) {\r\n        return favoriteNumber;\r\n    }\r\n\r\n    function addPerson(uint _favoriteNumber, string memory _name) public {\r\n        listOfPeople.push(Person(_favoriteNumber, _name));\r\n        nameToFavoriteNumber[_name] = _favoriteNumber;\r\n    }\r\n\r\n    function showListPeople() public view returns (Person[] memory) {\r\n        return listOfPeople;\r\n    }\r\n}",
+        "file": "contracts/SimpleStorage.sol"
+      }
+    }
+  },
+  "contracts/FunMe.sol": {
+    "__sources__": {
+      "contracts/FunMe.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.18;\r\n\r\ncontract FunMe{\r\n\r\n    uint public  minimumUsd = 5;\r\n\r\n    function fun() public payable {\r\n        require(msg.value >=  minimumUsd, \"Didn't send enough ETH\");\r\n    }\r\n\r\n    function withdraw() public  {}\r\n\r\n\r\n}",
+        "file": "contracts/FunMe.sol"
+      }
+    }
   }
 }
