@@ -14,7 +14,34 @@
 			},
 			{
 				"inputs": [],
-				"name": "myValue",
+				"name": "getConversionRate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUsd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "version",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -61,11 +88,11 @@
 	},
 	"sources": {
 		"contracts/FunMe.sol": {
-			"keccak256": "0x24a3857fe777deb88a8e50af2123e8f523262693530c0de2d70369060d0d2f20",
+			"keccak256": "0xb136eae7f2e8cc12ef624b7ccbe8a54601271b88cc55ded9aa60c036818f6c17",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b5473ed0e2578949214006cc82661eb43d959f3c6958f1eeb1f8dc4d7fc5287d",
-				"dweb:/ipfs/QmTswDhNkW2guZWV6C1yfMwJGiMsf9YvE9zDU1gjDzXCqA"
+				"bzz-raw://70b3b130adab3a3d4279ef98bfa8063163fac702607738a59d72868928dfa3a3",
+				"dweb:/ipfs/QmZRUnvaLjqTqa7ks3EaAVDH3oUePqXtQpnUY8ys4XeAe7"
 			]
 		}
 	},
